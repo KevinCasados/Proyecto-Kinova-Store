@@ -1,1 +1,1 @@
-# ecommerce-shop-starter
+# Kinova Store APP
