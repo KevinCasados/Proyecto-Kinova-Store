@@ -1,0 +1,119 @@
+/* Estilos para el Sidebar */
+.sidebar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+    padding-left: 40px;
+    padding-right: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra en todo el contorno */
+  }
+  
+  .sidebar-open {
+    right: 0;
+  }
+  
+  .sidebar-closed {
+    right: -100%;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px; 
+    padding-bottom: 24px; 
+    border-bottom: 1px solid #e4e4e4;
+  }
+  
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    height: 520px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  
+  .sidebar-content-lg {
+    height: 640px; 
+  }
+  
+  .sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    margin-top: 16px; 
+  }
+  
+  .sidebar-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar-total-text {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .sidebar-clear-cart {
+    cursor: pointer;
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    background-color: #f56565; /* bg-red-500 */
+    color: white;
+    width: 48px; 
+    height: 48px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+  }
+  
+  .bg-gray-200 {
+    background-color: #edf2f7;
+  }
+  
+  .bg-primary {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .text-primary {
+    color: #000000;
+  }
+
+  /* Responsividad */
+@media (min-width: 768px) { 
+  .sidebar {
+    width: 35vw;
+  }
+}
+
+@media (min-width: 1280px) { 
+  .sidebar {
+    max-width: 30vw;
+  }
+}
+
+@media (min-width: 1024px) { 
+  .sidebar-content {
+    height: 640px;
+  }
+}

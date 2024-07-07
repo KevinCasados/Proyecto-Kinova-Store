@@ -1,0 +1,40 @@
+/* Estilos para el componente Home */
+.home-section {
+  padding-top: 4rem; /* py-16 */
+  padding-bottom: 4rem; /* py-16 */
+}
+
+.home-container {
+  max-width: 1480px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centramos el contenedor */
+  padding: 0 1rem; /* Añadimos un padding lateral */
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.875rem; 
+  max-width: 640px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+@media (min-width: 768px) { 
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: none; 
+    margin-left: 0; 
+  }
+}
+
+@media (min-width: 1024px) { 
+  .home-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) { 
+  .home-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

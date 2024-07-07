@@ -1,0 +1,28 @@
+import React, { useContext } from 'react';
+import { ProductContext, ProductContextType } from '../../contexts/ProductContext/ProductContext.tsx';
+import Product from '../../components/Product/Product.tsx';
+import Hero from '../../components/Hero/Hero.tsx';
+import Filter from '../../components/Filter/Filter.tsx';
+import './style.css'
+
+const Home: React.FC = () => {
+  const { filteredProducts } = useContext(ProductContext) as ProductContextType;
+
+  return (
+    <div>
+      <Hero />
+      <section className="home-section">
+        <article className="home-container">
+          <Filter />
+          <div className="home-grid">
+            {filteredProducts.map((product) => (
+              <Product product={product} key={product.id} />
+            ))}
+          </div>
+        </article>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

@@ -1,0 +1,113 @@
+.cart-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+    width: 100%;
+    font-weight: 300;
+    color: #000; /* text-black */
+  }
+  
+  .cart-item-content {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline-end: 16px;
+  }
+  
+  .cart-item-image {
+    max-width: 80px;
+  }
+  
+  .cart-item-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart-item-title {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    max-width: 240px;
+    color: #000; /* text-black */
+    transition: color 0.3s;
+  }
+  
+  .cart-item-title:hover {
+    text-decoration: underline;
+  }
+  
+  .cart-item-remove {
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .cart-item-remove-icon {
+    color: #000; /* text-black */
+    transition: color 0.3s;
+  }
+  
+  .cart-item-remove-icon:hover {
+    color: #ef4444; /* text-red-500 */
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    gap: 0.5rem;
+    height: 36px;
+    font-size: 0.875rem;
+  }
+  
+  .cart-item-quantity-control {
+    display: flex;
+    flex: 1;
+    max-width: 100px;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #000; /* border-black */
+    font-weight: 500;
+    color: #000; /* text-black */
+  }
+  
+  .cart-item-decrease, .cart-item-increase {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  .cart-item-amount {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+  
+  .cart-item-price {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000; /* text-black */
+  }
+  
+  .cart-item-total {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #000; /* text-black */
+    font-weight: 500;
+  }
