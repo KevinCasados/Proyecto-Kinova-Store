@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BsPlus, BsEyeFill } from "react-icons/bs";
-import { CartContext, CartContextType } from '../../contexts/CartContext/CartContext.tsx';
+import { CartContext, CartContextType } from '../../contexts/CartContext/CartContext';
 import './style.css'
 
 interface ProductProps {
@@ -32,7 +32,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
           </div>
         </article>
         <article className="product-buttons">
-          <button onClick={() => addToCart({ ...product, amount: 1 }, id)}>
+          <button onClick={() => addToCart({ ...product, amount: 1 })}>
             <div className="product-button">
               <BsPlus className="product-icon" />
             </div>

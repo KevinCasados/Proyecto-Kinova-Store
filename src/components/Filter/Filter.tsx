@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { ProductContext, ProductContextType } from '../../contexts/ProductContext/ProductContext.tsx';
+import { ProductContext, ProductContextType } from '../../contexts/ProductContext/ProductContext';
 import './style.css';
 
 const Filter: React.FC = () => {
