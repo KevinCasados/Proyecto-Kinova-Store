@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/proyecto-kinova-store/static/css/main.794ca098.css",
+    "main.js": "/proyecto-kinova-store/static/js/main.23df3f04.js",
+    "static/media/woman_hero.png": "/proyecto-kinova-store/static/media/woman_hero.d109717db264ec684e97.png",
+    "static/media/logo-kinova-sin-fondo-negro.png": "/proyecto-kinova-store/static/media/logo-kinova-sin-fondo-negro.6934afc844a7a4538dc4.png",
+    "static/media/bg_hero.svg": "/proyecto-kinova-store/static/media/bg_hero.cd5c9e83759e74a20d2b.svg",
+    "index.html": "/proyecto-kinova-store/index.html",
+    "main.794ca098.css.map": "/proyecto-kinova-store/static/css/main.794ca098.css.map",
+    "main.23df3f04.js.map": "/proyecto-kinova-store/static/js/main.23df3f04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.794ca098.css",
+    "static/js/main.23df3f04.js"
+  ]
+}
