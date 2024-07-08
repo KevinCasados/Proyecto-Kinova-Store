@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { ProductContext, ProductContextType } from '../../contexts/ProductContext/ProductContext.tsx';
-import Product from '../../components/Product/Product.tsx';
-import Hero from '../../components/Hero/Hero.tsx';
-import Filter from '../../components/Filter/Filter.tsx';
+import { ProductContext, ProductContextType } from '../../contexts/ProductContext/ProductContext';
+import Product from '../../components/Product/Product';
+import Hero from '../../components/Hero/Hero';
+import Filter from '../../components/Filter/Filter';
 import './style.css'
 
 const Home: React.FC = () => {

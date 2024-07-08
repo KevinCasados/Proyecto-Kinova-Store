@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdAdd, IoMdClose, IoMdRemove } from 'react-icons/io';
-import { CartContext, CartContextType } from '../../contexts/CartContext/CartContext.tsx';
+import { CartContext, CartContextType } from '../../contexts/CartContext/CartContext';
 import './style.css'
 
 interface CartItemProps {

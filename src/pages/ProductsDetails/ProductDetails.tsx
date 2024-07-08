@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { CartContext, CartContextType, CartItem } from "../../contexts/CartContext/CartContext.tsx";
-import { ProductContext, ProductContextType } from "../../contexts/ProductContext/ProductContext.tsx";
-import './style.css'
+import { CartContext, CartContextType, CartItem } from "../../contexts/CartContext/CartContext";
+import { ProductContext, ProductContextType } from "../../contexts/ProductContext/ProductContext";
+import './style.css';
 
 interface Product {
   id: number;
@@ -19,7 +19,8 @@ const ProductDetails: React.FC = () => {
   const { products } = useContext(ProductContext) as ProductContextType;
   const { addToCart } = useContext(CartContext) as CartContextType;
 
-  const product = products.find((item: Product) => item.id === parseInt(id, 10));
+  // Proporciona un valor predeterminado para id
+  const product = products.find((item: Product) => item.id === parseInt(id ?? '', 10));
 
   if (!product) {
     return (
@@ -43,7 +44,7 @@ const ProductDetails: React.FC = () => {
               $ {price}
             </div>
             <p>{description}</p>
-            <button onClick={() => addToCart({ ...product, amount: 1 }, product.id)}>
+            <button onClick={() => addToCart({ ...product, amount: 1 })}>
               Add to Cart
             </button>
           </div>

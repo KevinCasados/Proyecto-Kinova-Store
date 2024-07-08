@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home.tsx';
-import ProductDetails from './pages/ProductsDetails/ProductDetails.tsx';
-import Sidebar from './components/Sidebar/Sidebar.tsx';
-import Header from './components/Header/Header.tsx';
-import Footer from './components/Footer/Footer.tsx';
+import Home from './pages/Home/Home';
+import ProductDetails from './pages/ProductsDetails/ProductDetails';
+import Sidebar from './components/Sidebar/Sidebar';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 const App: React.FC = () => {
   return (

@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdArrowForward } from 'react-icons/io';
 import { FiTrash2 } from 'react-icons/fi';
-import CartItem from '../../components/CartItem/CartItem.tsx';
-import { SidebarContext, SidebarContextType } from '../../contexts/SidebarContext/SidebarContext.tsx';
-import { CartContext, CartContextType, CartItem as CartItemType } from '../../contexts/CartContext/CartContext.tsx';
-import './style.css'
+import CartItem from '../../components/CartItem/CartItem';
+import { SidebarContext, SidebarContextType } from '../../contexts/SidebarContext/SidebarContext';
+import { CartContext, CartContextType, CartItem as CartItemType } from '../../contexts/CartContext/CartContext';
+import './style.css';
 
 const Sidebar: React.FC = () => {
   const { isOpen, handleClose } = useContext(SidebarContext) as SidebarContextType;
@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
       <div className='sidebar-footer'>
         <div className='sidebar-total'>
           <div className='sidebar-total-text'>
-            <span className='mr-2'>Total:</span>$ {parseFloat(total).toFixed(2)}
+            <span className='mr-2'>Total:</span><span className="sidebar-total-text">${total.toFixed(2)}</span>
           </div>
           <div onClick={clearCart} className='sidebar-clear-cart'>
             <FiTrash2 />

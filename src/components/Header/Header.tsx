@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { SidebarContext, SidebarContextType } from '../../contexts/SidebarContext/SidebarContext.tsx';
-import { CartContext, CartContextType } from '../../contexts/CartContext/CartContext.tsx';
+import { SidebarContext, SidebarContextType } from '../../contexts/SidebarContext/SidebarContext';
+import { CartContext, CartContextType } from '../../contexts/CartContext/CartContext';
 import { BsBag } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import Logo from '../../img/logo-kinova-sin-fondo-negro.png'
-import './style.css'
+import Logo from '../../img/logo-kinova-sin-fondo-negro.png';
+import './style.css';
 
 
 const Header: React.FC = () => {
